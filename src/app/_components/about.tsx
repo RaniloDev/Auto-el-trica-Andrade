@@ -70,8 +70,9 @@ export function About() {
               Contato via WhatsApp
             </a>
             <a
-              href="#"
+              href="https://maps.app.goo.gl/dGA8vx8uY8Qxcy2Z9"
               className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
+              target="_blank"
             >
               <MapIcon className="w-5 h-5 text-black" />
               Endereço da oficina
