@@ -124,8 +124,9 @@ export function Services() {
                       </div>
 
                       <a
-                        href="#"
+                        href={`https://wa.me/5587991195276?text=${item.linkText}`}
                         className="flex items-center justify-center gap-2 hover:bg-[#FFC107] px-4 py-1 rounded-md duration-300"
+                        target="_blank"
                       >
                         <WhatsappLogo className="w-5 h-5" />
                         Entrar em contato

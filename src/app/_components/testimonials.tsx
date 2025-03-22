@@ -54,7 +54,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="bg-[#FFC107] py-16">
+    <section className="bg-[#FDF6ec] py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-center font-bold mb-12">Depoimentos</h2>
 
@@ -66,13 +66,19 @@ export function Testimonials() {
                   <article className="bg-[#1e293b] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                     <div className="flex flex-col items-center text-center space-y-4">
                       <div className="relative w-24 h-24">
-                        <Image src={item.image} alt="Foto de perfil" fill sizes="96px" className="object-cover rounded-full"/>
+                        <Image
+                          src={item.image}
+                          alt="Foto de perfil"
+                          fill
+                          sizes="96px"
+                          className="object-cover rounded-full"
+                        />
                       </div>
 
                       <p className="text-gray-200">{item.content}</p>
                       <div>
-                      <p className="font-bold">{item.athor}</p>
-                      <p className="text-sm text-gray-400">{item.role}</p>
+                        <p className="font-bold">{item.athor}</p>
+                        <p className="text-sm text-gray-400">{item.role}</p>
                       </div>
                     </div>
                   </article>
@@ -83,15 +89,15 @@ export function Testimonials() {
 
           <button
             onClick={scrollPrev}
-            className="flex items-center justify-center rounded-full shadow-lg bg-white w-10 h-10 absolute -left-2 top-1/2 transform -translate-y-1/2 z-10"
+            className="flex items-center justify-center rounded-full shadow-lg bg-[#FFC107] w-10 h-10 absolute -left-2 top-1/2 transform -translate-y-1/2 z-10"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-600" />
+            <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={scrollNext}
-            className="flex items-center justify-center rounded-full shadow-lg bg-white w-10 h-10 absolute -right-3 top-1/2 transform -translate-y-1/2 z-10"
+            className="flex items-center justify-center rounded-full shadow-lg bg-[#FFC107] w-10 h-10 absolute -right-3 top-1/2 transform -translate-y-1/2 z-10"
           >
-            <ChevronRight className="w-6 h-6 text-gray-600" />
+            <ChevronRight className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>

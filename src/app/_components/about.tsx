@@ -34,8 +34,8 @@ export function About() {
         </div>
 
         <div className="space-y-6 mt-10">
-          <h2 className="text-4xl font-bold">SOBRE</h2>
-          <p>
+          <h2 className="text-4xl font-bold" data-aos="fade-left" data-aos-delay="300">SOBRE</h2>
+          <p data-aos="fade-left" data-aos-delay="800">
             Somos especialistas em mecânica e elétrica automotiva, oferecendo
             manutenção completa em injeção eletrônica, ignição, testes de bicos
             e atuadores. Realizamos revisão de motores, testes de bomba de
@@ -44,9 +44,9 @@ export function About() {
             linha leve, média e pesada com tecnologia e precisão.
           </p>
 
-          <p className="font-bold text-center">Auto elétrica Andrade</p>
+          <p className="font-bold text-center" data-aos="zoom-in-up">Auto elétrica Andrade</p>
 
-          <ul className="space-y-4">
+          <ul className="space-y-4" data-aos="zoom-in-up">
             <li className="flex items-center gap-2">
               <Check className="text-[#FFC107]" />
               Revisão completa do sistema elétrico e mecânico.
@@ -63,16 +63,19 @@ export function About() {
 
           <div className="flex gap-2">
             <a
-              href="#"
+              href="https://wa.me/5587991195276?text=Ol%C3%A1,%20gostaria%20do%20seu%20serviço!"
               className="bg-[#FFC107] text-white flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md hover:bg-yellow-600 duration-400"
+              target="_blank"
+              data-aos="fade-up" data-aos-delay="100"
             >
-              <WhatsappLogo className="w-5 h-5 text-white" />
+              <WhatsappLogo className="w-5 h-5 text-white"/>
               Contato via WhatsApp
             </a>
             <a
               href="https://maps.app.goo.gl/dGA8vx8uY8Qxcy2Z9"
               className="flex items-center justify-center w-fit gap-2 px-4 py-2 rounded-md"
               target="_blank"
+              data-aos="fade-up" data-aos-delay="300"
             >
               <MapIcon className="w-5 h-5 text-black" />
               Endereço da oficina
